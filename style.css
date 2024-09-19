@@ -147,3 +147,130 @@
     display: none; /* Hide the image on smaller screens */
   }
 }
+
+
+
+.footer {
+
+
+
+  min-height: auto;
+  padding-top: 0;
+  background: #1a1a1a; /* Dark background for high-tech look */
+  color: #e0e0e0; /* Light text color */
+}
+
+.footer .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+  flex: 1 1 25rem;
+  margin: 2.5rem;
+  background: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for a floating effect */
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #e0e0e0; /* Light color for headings */
+  padding-bottom: 1rem;
+  font-weight: 600; /* Bold for emphasis */
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #b0b0b0; /* Slightly lighter text color */
+  padding: 0.7rem 0;
+}
+
+.footer .box-container .box p i {
+  padding-right: 1rem;
+  color: #ffab00; /* Neon accent for icons */
+}
+
+.footer .box-container .box a {
+  font-size: 1.5rem;
+  color: #f0f0f0; /* Light color for links */
+  padding: 0.3rem 0;
+  display: block;
+}
+
+.footer .box-container .box a:hover {
+  color: #ffab00; /* Neon hover effect */
+}
+
+.footer .box-container .box .share {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .share a {
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  margin-right: 1rem;
+  transition: 0.2s;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: #00d9ff; /* Neon color for social icons */
+  border: none;
+}
+
+.footer .box-container .box .share a:hover {
+  background: rgba(0, 0, 0, 0.7); /* Darker on hover */
+  transform: scale(0.98);
+  border: 0.1rem solid #00d9ff; /* Neon border on hover */
+  color: #fff; /* White text on hover */
+}
+
+.footer .credit {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Nunito", serif;
+  font-weight: 600;
+  color: #e0e0e0; /* Light color for credit text */
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.3); /* Subtle top border */
+}
+
+.footer .credit a {
+  color: #00d9ff; /* Neon color for links */
+}
+
+.footer .fa {
+  color: #00d9ff; /* Neon color for icons */
+  margin: 0 0.3rem;
+  font-size: 1.5rem;
+  animation: pulse 0.5s infinite alternate; /* Pulse animation for icons */
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+#scroll-top {
+  position: fixed;
+  top: -140%;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  background: #00d9ff; /* Neon background for scroll button */
+  color: #000; /* Dark text color */
+  border-radius: 10%;
+  transition: 1s linear;
+  z-index: 1000;
+}
+
+#scroll-top.active {
+  top: calc(100% - 12rem);
+}
